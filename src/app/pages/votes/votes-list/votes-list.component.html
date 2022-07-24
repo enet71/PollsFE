@@ -1,0 +1,5 @@
+<votes-list-item
+  *ngFor="let vote of votes$ | async"
+  [vote]="vote"
+  (click)="openVoteInfo(vote.id!)"
+></votes-list-item>

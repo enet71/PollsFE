@@ -1,0 +1,9 @@
+@import "variables";
+
+:host {
+  display: flex;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+  }
+}
